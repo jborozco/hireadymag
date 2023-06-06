@@ -41,48 +41,62 @@ body {
 }
 
 #container {
-    width: 500px;
-    height: 800px;
+    width: 300px;
+    height: 0px;
     margin: 0 auto;
 
 
+
+
 }
 
-#container>* {
-    position: absolute;
+#container * {
+    position: relative;
+
+
 }
+
+
+
 
 #hi {
     width: 218.74px;
     height: 218.19px;
     margin: 0 auto;
-    top: 50px;
+    padding: 100px 0;
 
     background: #000000;
     border-radius: 16px;
     transform: rotate(45deg);
 }
 
+
+
 #hi * {
     transform: rotate(-45deg);
+    padding: 100px 0;
+
 }
 
 #I {
     margin-right: 190px;
     width: 227px;
     height: 130px;
-    top: 224px;
     background: #0038FF;
     border-radius: 16px;
+    padding: 40px 0;
+    margin-top: -62px;
 }
 
 #am {
     width: 259px;
     height: 172px;
-    top: 269px;
     background: #FFD600;
     border-radius: 110px;
     margin-left: 190px;
+    padding: 40px 0;
+    margin-top: -62px;
+
 }
 
 #looking {
@@ -92,7 +106,9 @@ body {
     z-index: 4;
     background: coral;
     border-radius: 21px 74px 21px 84px;
-    top: 362px;
+    padding: 40px 0;
+    margin-top: -62px;
+
 }
 
 #forA {
@@ -101,34 +117,37 @@ body {
     z-index: 3;
     background-image: url(img/losange.svg);
     background-position: center center;
+    background-size: contain;
     background-repeat: no-repeat;
     border-radius: 16px;
-    top: 448px;
     margin-left: 190px;
+    padding: 40px 0;
+    margin-top: -62px;
 
 }
 
 #cool {
+
     z-index: 3;
     width: 130px;
     height: 60px;
     font-size: 32px;
-    top: 555px;
     background: #AB0029;
     border-radius: 16px;
     transform: rotate(-21.64deg);
     margin-left: -160px;
+    margin-top: -62px;
 }
 
 #company {
     z-index: 1;
     width: 300px;
     height: 300px;
-    top: 513px;
     background-image: url(img/Union.svg);
     animation: rotation 10s infinite linear;
     background-position: center center;
     background-repeat: no-repeat;
+    margin-top: -62px;
 }
 
 #company span {
@@ -166,21 +185,139 @@ body {
     border-radius: 90px;
     background: #FFFFFF;
     box-shadow: 0px 9px 0px #EBEBEB;
-    top: 724px;
     margin-left: 390px;
     z-index: 4;
     cursor: pointer;
+    margin-top: -103px;
+    padding: 20px 0;
 }
 
 #linkedin:hover {
     width: 75px;
     height: 75px;
-    margin-top: 3px;
     border-radius: 90px;
     background: #FFFFFF;
+    margin-bottom: -3px;
+    margin-top: -100px;
+
     box-shadow: 0px 6px 0px #EBEBEB;
-    top: 724px;
     margin-left: 390px;
+
     z-index: 4;
     cursor: pointer;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    body * {
+        font-size: 31px;
+        /* identical to box height */
+
+
+        color: #FFFFFF;
+    }
+
+
+
+    #container {
+        width: 100%;
+    }
+
+
+
+
+
+
+    #hi {
+
+        width: 110px;
+        height: 110px;
+        padding: 43px 0;
+        margin: 0px 0 0 0;
+    }
+
+
+
+
+    #I {
+        width: 179px;
+        height: 72px;
+        padding: 43px 0;
+        margin: -10px 120px 0 0;
+
+
+    }
+
+    #am {
+        width: 179px;
+        height: 92px;
+        width: 50%;
+        height: 50%;
+        padding: 43px 0;
+        margin: -40px -130px 0 0;
+
+    }
+
+    #looking {
+        width: 179px;
+        height: 92px;
+        padding: 43px 0;
+        margin: -40px 110px 0 0;
+        border-radius: 11px 44px 11px 44px;
+
+
+    }
+
+    #forA {
+        width: 179px;
+        height: 92px;
+        padding: 41px 0;
+        margin: -39px -140px 0 0;
+
+    }
+
+    #cool {
+        width: 80px;
+        height: 35px;
+        padding: 0;
+        margin: -49px 80px 0 0;
+        font-size: 18px;
+        border-radius: 7px;
+    }
+
+    #company {
+        width: 189px;
+        height: 192px;
+        margin: -60px 0 0 0;
+        background-size: contain;
+    }
+
+
+
+
+
+    #linkedin {
+        width: 30px;
+        height: 30px;
+        padding: 20px;
+        margin: 0 0 0 0;
+        box-shadow: 0px 6px 0px #EBEBEB;
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+    }
+
+    #linkedin img {
+        width: 25px;
+        height: 25px;
+    }
+
+    #linkedin:hover {
+        width: 80%;
+        height: 80%;
+        padding: 20px 0;
+        margin-top: 0;
+    }
+
+
 }
