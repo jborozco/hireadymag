@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 51px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1DB276;
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    width: 500px;
+    height: 800px;
+    margin: 0 auto;
+
+
+}
+
+#container>* {
+    position: absolute;
+}
+
+#hi {
+    width: 218.74px;
+    height: 218.19px;
+    margin: 0 auto;
+    top: 50px;
+
+    background: #000000;
+    border-radius: 16px;
+    transform: rotate(45deg);
+}
+
+#hi * {
+    transform: rotate(-45deg);
+}
+
+#I {
+    margin-right: 190px;
+    width: 227px;
+    height: 130px;
+    top: 224px;
+    background: #0038FF;
+    border-radius: 16px;
+}
+
+#am {
+    width: 259px;
+    height: 172px;
+    top: 269px;
+    background: #FFD600;
+    border-radius: 110px;
+    margin-left: 190px;
+}
+
+#looking {
+    width: 239px;
+    height: 172px;
+    margin-right: 190px;
+    z-index: 4;
+    background: coral;
+    border-radius: 21px 74px 21px 84px;
+    top: 362px;
+}
+
+#forA {
+    width: 282px;
+    height: 138px;
+    z-index: 3;
+    background-image: url(img/losange.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    top: 448px;
+    margin-left: 190px;
+
+}
+
+#cool {
+    z-index: 3;
+    width: 130px;
+    height: 60px;
+    font-size: 32px;
+    top: 555px;
+    background: #AB0029;
+    border-radius: 16px;
+    transform: rotate(-21.64deg);
+    margin-left: -160px;
+}
+
+#company {
+    z-index: 1;
+    width: 300px;
+    height: 300px;
+    top: 513px;
+    background-image: url(img/Union.svg);
+    animation: rotation 10s infinite linear;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#company span {
+    z-index: 1;
+    width: 294.75px;
+    height: 294.75px;
+    animation: rotation2 10s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes rotation2 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-359deg);
+    }
+}
+
+
+
+#linkedin {
+    width: 75px;
+    height: 75px;
+    border-radius: 90px;
+    background: #FFFFFF;
+    box-shadow: 0px 9px 0px #EBEBEB;
+    top: 724px;
+    margin-left: 390px;
+    z-index: 4;
+    cursor: pointer;
+}
+
+#linkedin:hover {
+    width: 75px;
+    height: 75px;
+    margin-top: 3px;
+    border-radius: 90px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 0px #EBEBEB;
+    top: 724px;
+    margin-left: 390px;
+    z-index: 4;
+    cursor: pointer;
+}

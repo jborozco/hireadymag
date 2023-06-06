@@ -1,0 +1,1 @@
+Why not having a web page for a job application :) 
